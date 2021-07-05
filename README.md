@@ -1,2 +1,2 @@
-# studomo
-Website for Studomo.com
+# Code for Studomo.com
+Place for important notes.

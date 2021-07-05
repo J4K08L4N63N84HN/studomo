@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <!-- data layer -->
+  <script>
+    dataLayer = [];
+  </script>
+
+  <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
+  <script type="text/javascript"
+    src="//www.freeprivacypolicy.com/public/cookie-consent/3.1.0/cookie-consent.js"></script>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+      cookieconsent.run({
+        notice_banner_type: "headline",
+        consent_type: "express",
+        palette: "light",
+        language: "en",
+        website_name: "Studomo.com",
+        cookies_policy_url:
+          "https://studomo.com/Data-Protection-Declaration.html",
+        change_preferences_selector: "#changePreferences",
+      });
+    });
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script type="text/plain" cookie-consent="tracking">
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MCSJD8M');
+    </script>
+
+  <noscript>Cookie Consent by
+    <a href="https://www.FreePrivacyPolicy.com/free-cookie-consent/"
+      rel="nofollow noopener">FreePrivacyPolicy.com</a></noscript>
+  <!-- End Cookie Consent -->
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <!-- import fontawesome -->
+  <script src="https://kit.fontawesome.com/644da155ca.js" crossorigin="anonymous"></script>
+
+  <!-- import Tab Icon -->
+  <link rel="shortcut icon"
+    href="https://firebasestorage.googleapis.com/v0/b/studomo-university.appspot.com/o/Logo_tab.png?alt=media&token=e12019d5-5f76-426f-8432-7ef7929f2ee1"
+    type="image/x-icon" />
+
+  <!-- general settings -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>studomo || Database</title>
+  <meta name="description"
+    content="Find out more about your chances to get admitted to study programs at your dream universities. Which profiles have been accepted/ rejected in the past?" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCSJD8M" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+
+  <div class="universities-overall">
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <a id="logobutton" href="index.html">
+            <img width="250" src="./images/Logo.svg" class="nav-logo" alt="nav logo" />
+          </a>
+
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- nav-links -->
+        <ul class="nav-links">
+          <li>
+            <a id="university-page-link" href="database.html">Database</a>
+          </li>
+
+          <li>
+            <a href="contribute.html" id="contribute-page-link">Contribute</a>
+          </li>
+
+          <li>
+            <a href="aboutUs.html" id="about-page-link">about</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- nav-links -->
+        <ul class="sidebar-links">
+          <li>
+            <a id="university-page-link-mobil" href="database.html">Database</a>
+          </li>
+
+          <li>
+            <a href="contribute.html" id="contribute-page-link-mobil">Contribute</a>
+          </li>
+
+          <li>
+            <a href="aboutUs.html" id="about-page-link-mobil">about</a>
+          </li>
+        </ul>
+
+        <!-- social icons -->
+        <ul class="social-icons">
+          <li>
+            <a id="side-facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/studomo/"
+              class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+
+          <li>
+            <a id="side-linkedin" target="_blank" rel="noopener noreferrer"
+              href="https://www.linkedin.com/company/studomo" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+
+          <li>
+            <a id="side-instagram" target="_blank" rel="noopener noreferrer"
+              href="https://www.instagram.com/studomo_official/" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- page content-->
+    <div class="universities-main">
+      <!-- Info button -->
+      <div class="info">
+        <form>
+          <i class="fas fa-info-circle" id="info-button"></i>
+        </form>
+      </div>
+      <div>
+        <h3 class="universities-header">
+          Check out fellow students' profiles and the outcome of their
+          applications
+        </h3>
+      </div>
+
+      <!-- hidden container  -->
+      <div class="uni-hidden-popup">
+        <div class="heading-hidden-cont">
+          <i class="fas fa-times" id="close-hidden-popup"></i>
+        </div>
+
+        <div class="content-hidden-cont"></div>
+      </div>
+
+      <section class="check-universities">
+        <!-- Search part for universities -->
+        <div class="check-universities-input" id="second-uni-search">
+          <form action="" autocomplete="off">
+            <h3 id="heading-univ">Find profiles</h3>
+            <h3 id="at-univ">at</h3>
+            <span class="autocomplete">
+              <input type="text" class="input-form" name="universityTwo" id="universityTwo" placeholder="University" />
+            </span>
+            <h3 id="in-univ">in</h3>
+            <span class="autocomplete">
+              <input type="text" class="input-form" name="subjectTwo" id="subjectTwo" placeholder="Field of Interest" />
+            </span>
+            <br />
+            <input class="btn hero-btn" id="btn-universities" type="submit" value="Update"
+              id="university_button_update" />
+          </form>
+        </div>
+
+        <!-- output window for registered students -->
+        <section class="check-universities-output-window">
+          <div class="check-universities-headings">
+            <h3 class="output-info" id="admitted">Admitted</h3>
+            <h3 class="output-info">Level</h3>
+            <h3 class="output-info">University</h3>
+            <h3 class="output-info">Subject</h3>
+          </div>
+
+          <div class="check-universities-output" id="check-universities-output"></div>
+        </section>
+
+        <div class="check-universities-output" id="act-student-display"></div>
+      </section>
+
+      <i class="fas fa-angle-double-right" id="loadMoreResults"></i>
+      <i class="fas fa-angle-double-left" id="loadPreviousResults"></i>
+
+      <div class="feedbackuniv">
+        <p id="feedbackuniv">
+          Please help us to improve your experience by sharing your
+
+          <a id="feedbackunivlink" class="feedbackunivlink" href="Feedback.html">feedback.</a>
+        </p>
+        <!-- Email -->
+        <a id="sharemail" class="feedbackunivlink"
+          href="mailto:?Subject=Share Studomo&Body=I%20saw%20this%20and%20thought%20this%20could%20be%20interesting%20for%20you!%20 http://www.studomo.com">Share
+          via Email</a>
+        <br />
+        <!-- LinkedIn -->
+        <a id="sharelinkedin" class="feedbackunivlink"
+          href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.studomo.com" target="_blank">Share via
+          LinkedIn</a>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <p id="copyright">
+        &copy; <span id="date"></span> studomo all rights reserved
+      </p>
+
+      <!-- Legal Links -->
+      <a class="legal-links" id="privacypolicy" href="Data-Protection-Declaration.html">Data Protection Declaration</a>
+      <a class="legal-links" id="termsandconditions" href="terms-and-conditions.html">Terms and Conditions</a>
+      <a class="legal-links" id="legaldisclosure" href="Legal-Disclosure.html">Legal Disclosure</a>
+      <a href="#" class="legal-links" id="changePreferences">Change Cookies</a>
+
+      <!-- Social Icons -->
+      <span>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/studomo/" class="social-icon"
+          id="facebook-foot">
+          <i class="fab fa-facebook"></i>
+        </a>
+
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/studomo" class="social-icon"
+          id="linkedin-foot">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/studomo_official/"
+          class="social-icon" id="instagram-foot">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/7.17.1/firebase-app.js"></script>
+
+  <!-- Add SDKs for Firebase products -->
+  <script src="/__/firebase/7.17.1/firebase-firestore.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+
+  <!-- page JavaScript -->
+  <script src="./js/app.js"></script>
+  <script src="./js/data.json"></script>
+  <script src="./js/database.js"></script>
+</body>
+
+</html>

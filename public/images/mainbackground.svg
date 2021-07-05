@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1074" viewBox="0 0 1920 1074">
+  <defs>
+    <clipPath id="clip-Background">
+      <rect width="1920" height="1074"/>
+    </clipPath>
+  </defs>
+  <g id="Background" clip-path="url(#clip-Background)">
+    <rect width="1920" height="1074" fill="#fff"/>
+    <path id="Pfad_117" data-name="Pfad 117" d="M0-5022v483.188L130.239-4485l81.149-22.6L389.97-4485l69.181-22.6h175l91.385-31.213L824.411-4485H994l52.569-22.6L1200.2-4485l137.792-53.812,91.448,31.213h96.825l87.893-14.117L1734.767-4485l122.281-36.716,126.076,14.117V-5022Z" transform="translate(-28.119 5022)" fill="#cfefd8"/>
+  </g>
+</svg>
