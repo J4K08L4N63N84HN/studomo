@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- html head -->
+
+<head>
+
+  <!-- data layer -->
+  <script>
+    dataLayer = [];
+  </script>
+
+  <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
+  <script type="text/javascript"
+    src="//www.freeprivacypolicy.com/public/cookie-consent/3.1.0/cookie-consent.js"></script>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+      cookieconsent.run({
+        notice_banner_type: "headline",
+        consent_type: "express",
+        palette: "light",
+        language: "en",
+        website_name: "Studomo.com",
+        cookies_policy_url:
+          "https://studomo.com/Data-Protection-Declaration.html",
+        change_preferences_selector: "#changePreferences",
+      });
+    });
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script type="text/plain" cookie-consent="tracking">
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MCSJD8M');
+    </script>
+
+  <noscript>Cookie Consent by
+    <a href="https://www.FreePrivacyPolicy.com/free-cookie-consent/"
+      rel="nofollow noopener">FreePrivacyPolicy.com</a></noscript>
+  <!-- End Cookie Consent -->
+
+  <!-- import css -->
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <!-- import fontawesome -->
+  <script src="https://kit.fontawesome.com/644da155ca.js" crossorigin="anonymous"></script>
+
+  <!-- import Tab Icon -->
+  <link rel="shortcut icon"
+    href="https://firebasestorage.googleapis.com/v0/b/studomo-university.appspot.com/o/Logo_tab.png?alt=media&token=e12019d5-5f76-426f-8432-7ef7929f2ee1"
+    type="image/x-icon" />
+
+  <!-- general settings -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>studomo || Contribute</title>
+  <meta name="description"
+    content="Find out more about your chances to get admitted to study programs at your dream universities. Share your GPA, GMAT and experiences to help other students!" />
+</head>
+
+<!-- html body -->
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCSJD8M" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+
+  <div class="contribute-overall">
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <a id="logobutton" href="index.html">
+            <img width="250" src="./images/Logo.svg" class="nav-logo" alt="nav logo" />
+          </a>
+
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- nav-links -->
+        <ul class="nav-links">
+          <li>
+            <a href="database.html" id="university-page-link">Database</a>
+          </li>
+
+          <li>
+            <a id="contribute-page-link-1" href="contribute.html">Contribute</a>
+          </li>
+
+          <li>
+            <a href="aboutUs.html" id="about-page-link">about</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- nav-links -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="database.html" id="university-page-link-mobil">Database</a>
+          </li>
+
+          <li>
+            <a id="contribute-page-link-side" href="contribute.html">Contribute</a>
+          </li>
+
+          <li>
+            <a href="aboutUs.html" id="about-page-link-mobil">about</a>
+          </li>
+        </ul>
+
+        <!-- social icons -->
+        <ul class="social-icons">
+          <li>
+            <a id="side-facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/studomo/"
+              class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+
+          <li>
+            <a id="side-linkedin" target="_blank" rel="noopener noreferrer"
+              href="https://www.linkedin.com/company/studomo" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+
+          <li>
+            <a id="side-instagram" target="_blank" rel="noopener noreferrer"
+              href="https://www.instagram.com/studomo_official/" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- page content -->
+
+    <!-- Grow Community Questionset -->
+    <section>
+      <div class="contribute-main">
+        <!-- Info Popup -->
+        <div class="info-contribute">
+          <form>
+            <i class="fas fa-info-circle" id="info-button-contr"></i>
+          </form>
+        </div>
+
+        <!-- Contribute overlay -->
+        <div class="modal-overlay">
+          <div class="first-quest">
+            <form action="" method="" id="first-quest-id" autocomplete="off">
+              <h3 class="page-heading-contribute">
+                HELP US GROW OUR DATABASE!
+              </h3>
+              <p id="info_anonymous">
+                Your information will be used as an anonymous contribution to
+                our database.
+              </p>
+              <!-- Country -->
+              <label for="country" class="text-contribute">I'm from*</label>
+              <br />
+              <span class="autocomplete">
+                <input placeholder="Country" id="country-cur" name="country" class="input-form input-contribute"
+                  type="text" />
+              </span>
+              <br />
+
+              <!-- Degree -->
+              <label for="degree-cur" class="text-contribute">The last level I got admitted to was*</label>
+              <br />
+              <select class="dropdown input-contribute" id="degree-cur" name="degree-cur">
+                <option value="" disabled selected>Select appropriate</option>
+                <option value="Highschool">High School</option>
+                <option value="Bachelor">Bachelor / State Examination</option>
+                <option value="Master">Master</option>
+              </select>
+              <br />
+
+              <!-- GPA -->
+              <label for="grading-scala" class="text-contribute">My High School grade was/is*</label>
+              <br />
+              <select class="dropdown input-contribute" id="grading-scala" name="grading-scala">
+                <option value="" disabled selected>
+                  Select Grading System
+                </option>
+                <option value="Germany(4.0-1.0)">Best 1.0 - Worst 4.0</option>
+                <option value="GPA(1.0-4.0)">Best 4.0 - Worst 1.0</option>
+                <option value="UK(Fail-First)">First - Fail</option>
+                <option value="Netherlands(0-10)">10 - 0</option>
+                <option value="Percentage(0-100%)">100% - 0%</option>
+                <option value="Grading-Letters(F-A+)">A+ - F</option>
+                <option value="Italy(0-30)">30 - 0</option>
+              </select>
+              <input placeholder="Grade" id="cur-HGPA" class="input-form input-contribute grade-contribute"
+                name="GPA-high" type="number" min="1" max="4" step=".1" required />
+              <br />
+
+              <!-- first btn -->
+              <input id="submit-first-contr" class="btn hero-btn contr-btn" type="submit" value="Next" />
+              <p id="info_mandatory1">Fields marked with * are mandatory.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <p id="copyright">
+        &copy; <span id="date"></span> studomo all rights reserved
+      </p>
+
+      <!-- Legal Links -->
+      <a class="legal-links" id="privacypolicy" href="Data-Protection-Declaration.html">Data Protection Declaration</a>
+      <a class="legal-links" id="termsandconditions" href="terms-and-conditions.html">Terms and Conditions</a>
+      <a class="legal-links" id="legaldisclosure" href="Legal-Disclosure.html">Legal Disclosure</a>
+      <a href="#" class="legal-links" id="changePreferences">Change Cookies</a>
+
+      <!-- Social Icons -->
+      <span>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/studomo/" class="social-icon"
+          id="facebook-foot">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/studomo" class="social-icon"
+          id="linkedin-foot">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/studomo_official/"
+          class="social-icon" id="instagram-foot">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+
+  <!-- Import Firebase -->
+  <script src="/__/firebase/7.17.1/firebase-app.js"></script>
+
+  <!-- Add SDKs for Firebase products -->
+  <script src="/__/firebase/7.17.1/firebase-firestore.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+
+  <!-- page javascript -->
+  <script src="./js/app.js"></script>
+  <script src="./js/data.json"></script>
+  <script src="./js/contri.js"></script>
+</body>
+
+</html>
